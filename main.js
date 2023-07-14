@@ -15,7 +15,7 @@
   \**********************/
 /***/ (() => {
 
-eval("console.log(\"sexfuck\")\n\n//# sourceURL=webpack://restaurant_page/./src/index.js?");
+eval("\n\n// tab-switching logic\n\n//# sourceURL=webpack://restaurant_page/./src/index.js?");
 
 /***/ })
 
