@@ -9,13 +9,13 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
+/***/ "./src/js/index.js":
+/*!*************************!*\
+  !*** ./src/js/index.js ***!
+  \*************************/
 /***/ (() => {
 
-eval("\n\n// tab-switching logic\n\n//# sourceURL=webpack://restaurant_page/./src/index.js?");
+eval("\n\n// tab-switching logic\n\n//# sourceURL=webpack://restaurant_page/./src/js/index.js?");
 
 /***/ })
 
@@ -26,7 +26,7 @@ eval("\n\n// tab-switching logic\n\n//# sourceURL=webpack://restaurant_page/./sr
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
 /******/ 	var __webpack_exports__ = {};
-/******/ 	__webpack_modules__["./src/index.js"]();
+/******/ 	__webpack_modules__["./src/js/index.js"]();
 /******/ 	
 /******/ })()
 ;
