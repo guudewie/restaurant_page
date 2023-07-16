@@ -1,57 +1,82 @@
 /* CSS HERE */
 
 :root {
-    --color-tap: #123;
-    --color-tap-active: rgb(103, 169, 236);
+    --color-tap: #8A3126;
+    --color-tap-active: #CCCABC;
+    --color-one: #709067;
+    --color-two: #D9D9D7;
+    --color-three: #EEE8E7;
 }
 
 
-/************** Website **************/
+/************** Website Frame **************/
 
+html,
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    
     height: 100%;
     padding: 0px;
     margin: 0px;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .header,
 .footer {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
     gap: 5vw;
 
+    background-color: var(--color-one);
+    color: var(--color-three);
     height: 4rem;
 }
 
-.footer {
-    align-items: center;
+.tap {
+    color: var(--color-three);
+    font-size: 1.5rem;
+    transition: 4ms;
 }
 
-.tap {
-    background-color: var(--color-tap);
-    padding: 1rem 2rem;
-    border-radius: 1rem 1rem 0rem 0rem;
-    color: white;
+.tap:hover {
+    text-decoration: underline var(--color-three);
+    text-decoration-thickness: 0.1rem;
 }
 
 .active {
-    background-color: var(--color-tap-active);
+    text-decoration: underline var(--color-three);
+    text-decoration-thickness: 0.1rem;
 }
-
-/************** Main **************/
 
 .main {
-    height: 80vh;
-    padding: 4vw 8vw;
-    background-color: aquamarine;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 8vw 8vw;
+    background-image: url(../assets/restaurant_background_blurred.jpg);
+    background-size: 100%;
+    background-position: center;
 }
 
-.page {
+/************** Home Page **************/
+
+#home-page,
+#menu-page,
+#contact-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+    filter: blur(0);
+    opacity: 0.3;
+    padding: 3rem 4rem;
     height: 100%;
     background-color: azure;
+    border-radius: 15px;
 }
