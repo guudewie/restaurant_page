@@ -57,19 +57,19 @@ export function openMenu() {
     containerFF.appendChild(iconFF)
     
     const iconHH = document.createElement("img")
-    iconHH.setAttribute("src", "../src/assets/pizza_hawaii.png")
+    iconHH.setAttribute("src", PizzaHawaii)
     containerHH.appendChild(iconHH)
     
     const iconOO = document.createElement("img")
-    iconOO.setAttribute("src", "../src/assets/pizza_olive.png")
+    iconOO.setAttribute("src", PizzaOlive)
     containerOO.appendChild(iconOO)
     
     const iconSS = document.createElement("img")
-    iconSS.setAttribute("src", "../src/assets/pizza_salami.png")
+    iconSS.setAttribute("src", PizzaSalami)
     containerSS.appendChild(iconSS)
     
     const iconVV = document.createElement("img")
-    iconVV.setAttribute("src", "../src/assets/pizza_veggie.png")
+    iconVV.setAttribute("src", PizzaVeggie)
     containerVV.appendChild(iconVV)
 
     //add title
