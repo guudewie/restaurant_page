@@ -14,13 +14,16 @@ export function openWebsiteFrame() {
     anker.append(header, main, footer)
 
     // create header child elements
-    const tapHome = document.createElement("div")
+    const tapHome = document.createElement("div");
     const tapMenu = document.createElement("div")
     const tapABoutUs = document.createElement("div")
 
-    tapHome.classList.add("tap")
+    tapHome.classList.add("tap", "active") //initiate menu tap with active class –> underlined
+    tapHome.setAttribute("id", "tap-home")
     tapMenu.classList.add("tap")
+    tapMenu.setAttribute("id", "tap-menu")
     tapABoutUs.classList.add("tap")
+    tapABoutUs.setAttribute("id", "tap-aboutus")
 
     header.appendChild(tapHome)
     header.appendChild(tapMenu)
@@ -43,3 +46,4 @@ export function openWebsiteFrame() {
     footerMail.innerHTML = "Mail: very.italian@restaurant.ciao"
     footerAdress.innerHTML = "Piazza di Faccist 12, 68894 Milan"
 }
+

@@ -2,6 +2,12 @@ export function openMenu() {
     
     const mainAnker = document.querySelector(".main")
 
+    // create heading
+    const menuHeading = document.createElement("div")
+    menuHeading.classList.add("heading")
+    menuHeading.innerHTML = "Our Menu"
+    mainAnker.appendChild(menuHeading)
+
     // create menu page container
     const menuPage = document.createElement("div")
     menuPage.setAttribute("id", "menu-page")

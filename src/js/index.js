@@ -1,33 +1,43 @@
 import { openWebsiteFrame } from '../js/website/website.js';
-//import { openHome } from './home/home.js';
+import { openHome } from './home/home.js';
 import { openMenu } from './menu/menu.js';
-//import { openAboutUs } from './aboutus/aboutus.js';
+import { openAboutUs } from './aboutus/aboutus.js';
 
 
-window.addEventListener("load", () => {
-    openWebsiteFrame();
-    openMenu();
+function removeMain() {
+    
+    let mainElements = document.querySelectorAll(".main>*");
+    mainElements.forEach((element) => element.remove())
+}
+
+openWebsiteFrame();
+openHome();
+
+// initiate query selectors after openWebsiteFrame is run to avoid 'null error'
+const tapHome = document.querySelector("#tap-home");
+const tapMenu = document.querySelector("#tap-menu");
+const tapAboutUs = document.querySelector("#tap-aboutus");
+
+tapHome.addEventListener("click", () => {
+    removeMain();
+    openHome();
+    tapHome.classList.toggle("active")
+    tapMenu.classList.remove("active")
+    tapAboutUs.classList.remove("active")
 })
 
-// import openMenu() from menu
-// import openContact() from contact
+tapMenu.addEventListener("click", () => {
+    removeMain();
+    openMenu();
+    tapHome.classList.remove("active")
+    tapMenu.classList.toggle("active")
+    tapAboutUs.classList.remove("active")
+})
 
-/*
-
-
-TAP-SWITCHING LOGIC
-
-main.addeventlistener {
-    openMain()   
-}
-
-menu.addeventlistener { 
-    openMenu()   
-}
-
-contact.addeventlistener {
-    openContact()   
-}
-
-
-*/
+tapAboutUs.addEventListener("click", () => {
+    removeMain();
+    openAboutUs();
+    tapHome.classList.remove("active")
+    tapMenu.classList.remove("active")
+    tapAboutUs.classList.toggle("active")
+})
