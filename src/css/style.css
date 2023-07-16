@@ -19,12 +19,13 @@ body {
     height: 100%;
     padding: 0px;
     margin: 0px;
+
+    font-family: var(--font-lora);
 }
 
 body {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .header,
@@ -36,8 +37,8 @@ body {
 
     background-color: var(--color-one);
     color: var(--color-three);
-    height: 4rem;
-    padding: 0vw 18vw;
+    height: 80px;
+    padding: 15px 18vw;
 }
 
 .footer {
@@ -70,12 +71,13 @@ body {
     background-image: url(../assets/restaurant_background_blurred.jpg);
     background-size: 100%;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 /************** Home Page **************/
 
 #home-page,
-#contact-page {
+#aboutus-page {
     display: flex;
     flex-direction: column;
     
@@ -99,8 +101,33 @@ body {
 
 #menu-page {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+    gap: 5vw;
 
+    padding: 5rem 1.5rem;
     background-color: #eee8e787;
 }
+
+.pizza-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    height: 20vw;
+    transition: transform 1s;
+}
+
+img:hover {
+    transform: rotate(20deg);
+}
+
+.pizza-text {
+    font-size: 2rem;
+    font-family: var(--font-lora);
+}
+
