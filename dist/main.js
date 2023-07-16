@@ -10,13 +10,23 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/js/home/home.js":
+/*!*****************************!*\
+  !*** ./src/js/home/home.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   openHome: () => (/* binding */ openHome)\n/* harmony export */ });\nfunction openHome() {\n    \n    const mainAnker = document.querySelector(\".main\")\n\n    // create home page container\n    const homePage = document.createElement(\"div\")\n    homePage.setAttribute(\"id\", \"home-page\")\n\n    mainAnker.appendChild(homePage)\n\n    // create heading\n    const heading = document.createElement(\"div\")\n    heading.classList.add(\"heading\")\n    heading.innerHTML = \"Delizioso Gusto -<br>Authentic Italian Cuisine<br><br>\"\n\n    homePage.appendChild(heading)\n\n    // create text\n    const text = document.createElement(\"div\")\n    text.classList.add(\"text\")\n    text.innerHTML = \"Welcome to Delizioso Gusto, where our passion for food meets Italian tradition. Indulge in our carefully crafted dishes, prepared with the finest ingredients sourced from Italy. Immerse yourself in the warm and inviting atmosphere as you savor the true taste of Italy. Buon appetito!\"\n\n    homePage.appendChild(text)\n}\n\n//# sourceURL=webpack://restaurant_page/./src/js/home/home.js?");
+
+/***/ }),
+
 /***/ "./src/js/index.js":
 /*!*************************!*\
   !*** ./src/js/index.js ***!
   \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_website_website_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../js/website/website.js */ \"./src/js/website/website.js\");\n\n\n\nwindow.addEventListener(\"load\", () => (0,_js_website_website_js__WEBPACK_IMPORTED_MODULE_0__.openWebsiteFrame)())\n\n// import openMenu() from menu\n// import openContact() from contact\n\n/*\n\n\nTAP-SWITCHING LOGIC\n\nmain.addeventlistener {\n    openMain()   \n}\n\nmenu.addeventlistener { \n    openMenu()   \n}\n\ncontact.addeventlistener {\n    openContact()   \n}\n\n\n*/\n\n//# sourceURL=webpack://restaurant_page/./src/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_website_website_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../js/website/website.js */ \"./src/js/website/website.js\");\n/* harmony import */ var _home_home_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home/home.js */ \"./src/js/home/home.js\");\n\n\n\n\nwindow.addEventListener(\"load\", () => {\n    (0,_js_website_website_js__WEBPACK_IMPORTED_MODULE_0__.openWebsiteFrame)();\n    (0,_home_home_js__WEBPACK_IMPORTED_MODULE_1__.openHome)();\n})\n\n// import openMenu() from menu\n// import openContact() from contact\n\n/*\n\n\nTAP-SWITCHING LOGIC\n\nmain.addeventlistener {\n    openMain()   \n}\n\nmenu.addeventlistener { \n    openMenu()   \n}\n\ncontact.addeventlistener {\n    openContact()   \n}\n\n\n*/\n\n//# sourceURL=webpack://restaurant_page/./src/js/index.js?");
 
 /***/ }),
 

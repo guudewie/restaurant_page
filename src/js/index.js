@@ -1,7 +1,11 @@
 import {openWebsiteFrame} from '../js/website/website.js'
+import { openHome } from './home/home.js'
 
 
-window.addEventListener("load", () => openWebsiteFrame())
+window.addEventListener("load", () => {
+    openWebsiteFrame();
+    openHome();
+})
 
 // import openMenu() from menu
 // import openContact() from contact
