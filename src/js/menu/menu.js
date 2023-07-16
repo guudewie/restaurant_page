@@ -1,5 +1,3 @@
-import { container } from "webpack"
-
 export function openMenu() {
     
     const mainAnker = document.querySelector(".main")
@@ -13,27 +11,27 @@ export function openMenu() {
     // create menu containers
     const containerTT = document.createElement("div")
     containerTT.classList.add("pizza-container")
-    mainAnker.appendChild(containerTT)
+    menuPage.appendChild(containerTT)
 
     const containerFF = document.createElement("div")
     containerFF.classList.add("pizza-container")
-    mainAnker.appendChild(containerFF)
+    menuPage.appendChild(containerFF)
 
     const containerHH = document.createElement("div")
     containerHH.classList.add("pizza-container")
-    mainAnker.appendChild(containerHH)
+    menuPage.appendChild(containerHH)
 
     const containerOO = document.createElement("div")
     containerOO.classList.add("pizza-container")
-    mainAnker.appendChild(containerOO)
+    menuPage.appendChild(containerOO)
 
     const containerSS = document.createElement("div")
     containerSS.classList.add("pizza-container")
-    mainAnker.appendChild(containerSS)
+    menuPage.appendChild(containerSS)
 
     const containerVV = document.createElement("div")
     containerVV.classList.add("pizza-container")
-    mainAnker.appendChild(containerVV)
+    menuPage.appendChild(containerVV)
 
     //add images
     const iconTT = document.createElement("img")
