@@ -6,7 +6,6 @@ import { openMenu } from './menu/menu.js';
 
 window.addEventListener("load", () => {
     openWebsiteFrame();
-    openMenu();
 })
 
 // import openMenu() from menu
