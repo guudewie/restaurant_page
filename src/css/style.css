@@ -6,6 +6,9 @@
     --color-one: #709067;
     --color-two: #D9D9D7;
     --color-three: #EEE8E7;
+
+    --font-cinzel: 'Cinzel', serif;
+    --font-lora: 'Lora', serif
 }
 
 
@@ -34,6 +37,11 @@ body {
     background-color: var(--color-one);
     color: var(--color-three);
     height: 4rem;
+    padding: 0vw 18vw;
+}
+
+.footer {
+    justify-content: space-between;
 }
 
 .tap {
@@ -58,7 +66,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    padding: 8vw 8vw;
+    padding: 8vw 18vw;
     background-image: url(../assets/restaurant_background_blurred.jpg);
     background-size: 100%;
     background-position: center;
@@ -67,16 +75,32 @@ body {
 /************** Home Page **************/
 
 #home-page,
-#menu-page,
 #contact-page {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     
-    filter: blur(0);
-    opacity: 0.3;
-    padding: 3rem 4rem;
     height: 100%;
-    background-color: azure;
-    border-radius: 15px;
+}
+
+.heading {
+    font-family: var(--font-cinzel);
+    font-size: 2.6rem;
+    font-weight: 500;
+    text-shadow: 1px 1px 1px var(--color-tap-active);
+}
+
+.text {
+    font-family: var(--font-lora);
+    line-height: 1.5rem;
+}
+
+
+/************** Menu Page **************/
+
+#menu-page {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    background-color: #eee8e787;
 }
