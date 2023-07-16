@@ -1,4 +1,10 @@
 import '../../css/style.css'
+import PizzaTomato from "../../assets/pizza_bacon.png";
+import PizzaFunghi from "../../assets/pizza_funghi.png";
+import PizzaHawaii from "../../assets/pizza_hawaii.png";
+import PizzaOlive from "../../assets/pizza_olive.png";
+import PizzaSalami from "../../assets/pizza_salami.png";
+import PizzaVeggie from "../../assets/pizza_veggie.png";
 
 export function openMenu() {
     
@@ -43,7 +49,7 @@ export function openMenu() {
 
     //add images
     const iconTT = document.createElement("img")
-    iconTT.setAttribute("src", "../src/assets/pizza_bacon.png")
+    iconTT.setAttribute("src", PizzaTomato)
     containerTT.appendChild(iconTT)
     
     const iconFF = document.createElement("img")
