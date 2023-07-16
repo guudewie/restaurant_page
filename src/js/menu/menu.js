@@ -53,7 +53,7 @@ export function openMenu() {
     containerTT.appendChild(iconTT)
     
     const iconFF = document.createElement("img")
-    iconFF.setAttribute("src", "../src/assets/pizza_funghi.png")
+    iconFF.setAttribute("src", PizzaFunghi)
     containerFF.appendChild(iconFF)
     
     const iconHH = document.createElement("img")
