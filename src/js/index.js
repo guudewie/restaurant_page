@@ -1,3 +1,27 @@
+import {openWebsiteFrame} from '../js/website/website.js'
 
 
-// tab-switching logic
+window.addEventListener("load", () => openWebsiteFrame())
+
+// import openMenu() from menu
+// import openContact() from contact
+
+/*
+
+
+TAP-SWITCHING LOGIC
+
+main.addeventlistener {
+    openMain()   
+}
+
+menu.addeventlistener { 
+    openMenu()   
+}
+
+contact.addeventlistener {
+    openContact()   
+}
+
+
+*/
