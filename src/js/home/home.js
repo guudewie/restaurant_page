@@ -1,3 +1,5 @@
+import '../../css/style.css'
+
 export function openHome() {
     
     const mainAnker = document.querySelector(".main")
